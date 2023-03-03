@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form cơ bản</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #39b0ec;
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            align-items: start;
+            justify-content: center;
+
+        }
+
+        form {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 600px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            overflow: auto;
+          background-color: #c7babe;
+        }
+
+        .main {
+            display: flex;
+            /*flex-direction: column;*/
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 12px 16px;
+        }
+
+        .item {
+            display: flex;
+            width: 48%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /*padding-left: 12px;*/
+        }
+        input{
+          width: 90%;
+          /*height: 40px;*/
+          padding: 15px;
+        }
+        select{
+          padding: 15px;
+        }
+        textarea{
+          width: 100%;
+          height: 40%;
+        }
+        button{
+          text-align: center;
+          width: 100%;
+          padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="bai5.html">
+        <h1>Create Account</h1>
+        <div class="main">
+            <div class="item">
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" placeholder="First Name">
+            </div>
+            <div class="item">
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" placeholder="Last name">
+            </div>
+            <div class="item">
+                <label for="youremail">Your Email</label>
+                <input type="email" id="youremail" placeholder="Your Email">
+            </div>
+            <div class="item">
+                <label for="yourphone">Your Phone</label>
+                <input type="tel" id="yourphone" placeholder="Your Phone">
+            </div>
+<!--            <div class="item">-->
+<!--                <label for="firstname">First name</label>-->
+<!--                <input type="text" id="firstname" placeholder="First Name">-->
+<!--            </div>-->
+<!--          <div class="item">-->
+<!--            <label for="firstname">First name</label>-->
+<!--            <input type="text" id="firstname" placeholder="First Name">-->
+<!--          </div>-->
+          <div>
+            <label for="country">Country</label>
+            <select name="SelectCountry" id="country" content="Select country">
+              <option>Select Country</option>
+              <option>Vietnam</option>
+              <option>Vietnam</option>
+              <option>Vietnam</option>
+              <option>Vietnam</option>
+            </select>
+            <label for="counse">Counse</label>
+            <select name="Select Counse" id="counse">
+              <option value="Counse">Select Counse</option>
+              <option value="Counse">Counse</option>
+              <option value="Counse">Counse</option>
+              <option value="Counse">Counse</option>
+              <option value="Counse">Counse</option>
+            </select>
+          </div>
+            <textarea placeholder="Content"></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
